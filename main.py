@@ -3,7 +3,7 @@ from menus import menu_calculo_propina, menu_dividir_cuenta
 def main():
     while True:
         print("=================================================")
-        print("   SIMULADOR DE PROPINA                          ")
+        print("   SIMULADOR DE PROPINA")
         print("=================================================")
         print("1. Calcular propina y total a pagar.")
         print("2. Calcular total a pagar dividido entre varias personas.")
@@ -13,7 +13,7 @@ def main():
         
         if not opcion.isdigit():
             
-            print('Solo se permiten números, intente de nuevo.\n')
+            print('Solo se permiten digitos.\n')
             continue
 
         if opcion == "1":   
@@ -22,11 +22,11 @@ def main():
             menu_dividir_cuenta()
         elif opcion == "3":
             print("=================================================")
-            print("¡Gracias por usar el Simulador de Propina!"       )
+            print("¡Gracias por usar el Simulador de Propina!")
             print("=================================================")
             break
         else:
-            print("Opción no válida, intente de nuevo.\n")
+            print("Opción no válida.\n")
             continue
         
 if __name__ == "__main__":
